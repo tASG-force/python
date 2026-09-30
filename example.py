@@ -6,8 +6,8 @@ from pybricks.tools import wait, StopWatch
 
 hub = PrimeHub()
 
-left_motor = Motor(Port.A)
-right_motor = Motor(Port.B)
+left_motor = Motor(Port.C, Direction.COUNTERCLOCKWISE)
+right_motor = Motor(Port.D)
 
 db = DriveBase(
     left_motor,
