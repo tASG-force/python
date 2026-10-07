@@ -15,19 +15,3 @@ db = DriveBase(
     wheel_diameter=56,
     axle_track=120
 )
-
-distance = 300
-turn_angle = 90
-
-def drive_square():
-    for i in range(4):
-        db.straight(distance)
-        db.turn(turn_angle)
-
-db.reset()
-
-drive_square()
-
-wait(1000)
-
-print("Fertig!")
